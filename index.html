@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasim Akram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="main-header" id ="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div>
+                    <a href="#" class="logo"><span>W</span>asim.</a>
+                </div>
+                <ul class="menu-bar" id="side-menu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#my-project" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <div class="banner">
+            <p>Web Developer</p>
+            <h1>Hi I'm <span>Wasim</span><br>Akram From India</h1>
+            <a href="images/Resume [Wasim Akram].pdf" class="btn btn2" download>Download CV</a>
+        </div>
+    </header>
+
+    <!-- -----------------About Section-------------------- -->
+    
+    
+    <section class="white-bg" id="about">
+        <div class="about-content">
+            <div class="left"><img src="images/user.jpg" alt=""></div>
+            <div class="right">
+                <h1 class="sub-title">About Me</h1>
+                <p class="fs-15">I'm final year Undergrad student pursuing my B.Tech in Computer Science and Engineering from Guru Tegh Bahadur Institute of Technology.<br>Really passionate about new technologies and eager to learn,grow and adapt.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('education',event)">Eduction</p>
+                    <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li class="fs-15"><span>Programming Languages</span><br>C/C++,JavaScript,SQL,Java.</li>
+                        <li class="fs-15"><span>Technologies/Frameworks</span><br>HTML,CSS,Bootstrap,NodeJS,ReactJS.</li>
+                        <li class="fs-15"><span>DBMS</span><br>MySQL,MongoDB.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li class="fs-15"><span>Guru Tegh Bahadur Institute of Technology</span><br>B.Tech in CSE</li>
+                        <li class="fs-15"><span>Aligarh Muslim University</span><br>Class 12<sup>th</sup></li>
+                        <li class="fs-15"><span>Aligarh Muslim University</span><br>Class 10<sup>th</sup></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li class="fs-15"><span>Coding Ninjas</span><br>Teaching Assistant(Data Structures)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!------------------------- Project Section------------------ -->
+
+    <section id="my-project" class="white-bg">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="">
+                    <div class="layer">
+                        <h3>To Do app</h3>
+                        <p>It lets you add your day to day task with due date and category.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>An online store enables the customer to browse range of products and services.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>The app connects you to people around the world of your interest.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="" class="btn">See more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------  Contact Section --------------------------------------->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3 class="sub-title">Get in touch</h3>
+                    <p><i class="fa-sharp fa-solid fa-house"></i>New Delhi,India</p>
+                    <p><i class="fa-solid fa-mobile"></i>+91-7060680396</p>
+                    <p><i class="fa-solid fa-envelope"></i>akramdel231@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" id="email" placeholder="Enter your email" required>
+                        <input type="text" name="Subject" id="sub" placeholder="Enter Subject" required>
+                        <textarea name="Message" rows="8" placeholder="Enter Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- --------------------------Footer Section---------------------------- -->
+
+    <footer id="footer">
+        <div class="container">
+            <p>Copyright © 2022. All rights reserved</p>
+            <h3><span>W</span>asim Akram</h3>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
